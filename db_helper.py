@@ -1,13 +1,12 @@
-# Author: Dhaval Patel. Codebasics YouTube Channel
-
-import mysql.connector
+import psycopg2
 global cnx
 
-cnx = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="root",
-    database="deepConvo"
+# Establish the connection
+cnx = psycopg2.connect(
+    host="ep-shy-feather-a5rr4wlg.us-east-2.aws.neon.tech",
+    user="deepconvo_owner",
+    password="9moSFhlbO1vY",
+    database="deepconvo"
 )
 
 def view_budget(campaign_name: str):
